@@ -16,33 +16,14 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.mortbay.jetty</groupId>
+                <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>8.1.10.v20130312</version>
                 <configuration>
                     <webAppConfig>
                         <contextPath>/</contextPath>
                         <jettyEnvXml>${basedir}/src/test/resources/jetty-env.xml</jettyEnvXml>
                     </webAppConfig>
                 </configuration>
-
-                <dependencies>
-
-                    <!-- Database -->
-
-                    <dependency>
-                        <groupId>postgresql</groupId>
-                        <artifactId>postgresql</artifactId>
-                        <version>9.1-901.jdbc4</version>
-                    </dependency>
-
-                    <dependency>
-                        <groupId>c3p0</groupId>
-                        <artifactId>c3p0</artifactId>
-                        <version>0.9.1</version>
-                    </dependency>
-
-                </dependencies>
             </plugin>
         </plugins>
     </build>
