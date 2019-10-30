@@ -18,9 +18,8 @@
         <!-- Suppress the warning about file encodings -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!-- Target JDK 1.6 -->
-        <project.build.source>1.6</project.build.source>
-        <project.build.target>1.6</project.build.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
 
         <!-- The latest compatible version of spring -->
         <spring.version>3.1.4.RELEASE</spring.version>
