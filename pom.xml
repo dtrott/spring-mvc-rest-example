@@ -146,6 +146,12 @@
 
             <dependency>
                 <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
                 <artifactId>spring-tx</artifactId>
                 <version>${spring.version}</version>
                 <exclusions>
@@ -193,8 +199,18 @@
                 <version>2.1.3.RELEASE</version>
                 <exclusions>
                     <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-beans</artifactId>
+                    </exclusion>
+
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-context</artifactId>
+                    </exclusion>
+
+                    <exclusion>
+                        <groupId>commons-io</groupId>
+                        <artifactId>commons-io</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
