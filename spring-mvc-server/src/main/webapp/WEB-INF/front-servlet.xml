@@ -8,19 +8,6 @@
                            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
-        <!-- Define the HTTP Media types -->
-        <property name="mediaTypes">
-            <map>
-                <entry key="" value="text/html"/>
-                <entry key="html" value="text/html"/>
-                <entry key="xml" value="application/xml"/>
-                <entry key="json" value="application/json"/>
-            </map>
-        </property>
-
-        <!-- Activate the media type lookup (above) -->
-        <property name="favorPathExtension" value="true"/>
-
         <!-- Map regular requests to JSP pages -->
         <property name="viewResolvers">
             <list>
