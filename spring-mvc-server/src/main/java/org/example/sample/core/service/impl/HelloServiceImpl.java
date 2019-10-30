@@ -45,6 +45,6 @@ public class HelloServiceImpl implements HelloService {
     @Override
     @Transactional
     public Hello findById(Long id) {
-        return helloRepository.findOne(id);
+        return helloRepository.findById(id).get();
     }
 }
