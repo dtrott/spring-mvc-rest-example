@@ -22,7 +22,7 @@
         <maven.compiler.target>11</maven.compiler.target>
 
         <!-- The latest compatible version of spring -->
-        <spring.version>5.2.0.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <hibernate.version>5.4.6.Final</hibernate.version>
         <!-- This version must match the version imported by the hibernated dependency on the previous line -->
         <slf4j.version>1.7.28</slf4j.version>
